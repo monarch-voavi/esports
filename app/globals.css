@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neon-green: #00FFA3;
+  --neon-purple: #8B6FFF;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #080B14;
+  color: #fff;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D1117;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2E3D56;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00FFA340;
+}
+
+/* Selection */
+::selection {
+  background: #00FFA320;
+  color: #00FFA3;
+}
+
+/* Recharts overrides */
+.recharts-default-tooltip {
+  background: #111827 !important;
+  border: 1px solid #263347 !important;
+  border-radius: 8px !important;
+}
+
+.recharts-tooltip-label {
+  color: #9CA3AF !important;
+}
